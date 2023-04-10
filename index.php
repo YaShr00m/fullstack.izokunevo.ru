@@ -27,7 +27,7 @@ get_header ();
 				if ($live_area === $whole_area) $live_area = '';
 				$term = wp_get_post_terms($post->ID, 'real_estate_types',  array("fields" => "names")) [0];
 				?>
-				<div class="col-6 col-sm-6 col-lg-4 col-md-6 mb-4 post_item">
+				<div class="col-12 col-sm-6 col-lg-4 col-md-6 mb-4 post_item">
 					<div>
 						<div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-2"
 						     data-mdb-ripple-color="light">
