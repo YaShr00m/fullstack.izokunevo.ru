@@ -1,0 +1,159 @@
+/*
+Theme Name:   Understrap Child
+Theme URI:    https://understrap.com
+Description:  Understrap Child Theme
+Author:       the Understrap Contributors
+Author URI:   https://github.com/understrap/understrap-child/graphs/contributors
+Template:     understrap
+Version:      1.2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  understrap-child
+Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+GitHub Theme URI: understrap/understrap-child
+*/
+
+#wrapper-navbar {
+    margin-bottom: 2em;
+}
+
+.post_item a {
+    text-decoration: none;
+}
+
+.post_item:hover .post_item_price {
+    background: #890909c9;
+}
+
+
+.post_item .post_item_link {
+    color: black;
+    display: block;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post_item .item_city span {
+    color: #777;
+    font-size: 0.8em;
+    padding: 5px 0 0 0;
+    display: block;
+}
+
+.post_item .item_city span > a > i.fa {
+    font-size: 0.75em;
+    padding-right: 4px;
+}
+
+.post_item .bg-image {
+    position: relative;
+}
+
+.post_item_info {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    bottom: 0;
+    padding: 10px 15px 11px 15px;
+    color: white;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.post_item:hover .post_item_info {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.post_item_info > i.fa {
+    padding: 0 10px 0 0;
+}
+
+.post_item_info span {
+    display: inline-block;
+}
+
+.post_cities img {
+    background: black;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.post_cities .bg-image i {
+    color: white;
+    text-align: center;
+    display: block;
+    position: absolute;
+    font-size: 4em;
+    top: 19px;
+    width: 100%;
+    font-style: normal;
+    text-shadow: 1px 1px black;
+    z-index: 20;
+}
+
+.post_cities a:hover i {
+    text-shadow: 1px 1px 5px black;
+}
+
+.post_cities a {
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.post_cities:hover img {
+    filter: contrast(1.2);
+}
+
+.post_cities a span {
+    font-size: 19px;
+    padding: 10px 0 0 0;
+    display: block;
+    color: black;
+}
+
+.post_item_price {
+    position: absolute;
+    background: #af1c1cc9;
+    right: 0;
+    top: 20px;
+    padding: 5px 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+/* убрать лишнее из формы загрузки */
+.acf-field--post-title, label[for=acf-_post_content], .media-frame-menu, .acf-expand-details, .media-frame-menu-heading, .media-sidebar, .has-load-more .media-toolbar, .load-more-count {
+    display: none !important;
+}
+
+.media-modal-content {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.media-frame-content, .media-frame-toolbar, .media-frame-title {
+    left: 0 !important;
+}
+
+.attachments-wrapper {
+    top: 0 !important;
+}
+
+
+
+#acf_form_add_real_estate form label, #add_real_estate_form label {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+#add_real_estate_form input[type=file] {
+    padding: 20px 40px;
+    border: 3px dashed #eee;
+    border-radius: 5px;
+}
