@@ -177,9 +177,7 @@ function add_real_estate () {
 }
 
 add_action( 'wp_ajax_show_acf_form', 'show_acf_form' );
-// we must allow to use this script non logged users
 add_action( 'wp_ajax_nopriv_show_acf_form', 'show_acf_form' );
 
 add_action( 'wp_ajax_add_real_estate', 'add_real_estate' );
-// we must disallow to use this script non logged users (so just leave this line commented)
-#add_action( 'wp_ajax_nopriv_add_real_estate', 'add_real_estate' );
+add_action( 'wp_ajax_nopriv_add_real_estate', 'add_real_estate' );
