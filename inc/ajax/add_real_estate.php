@@ -36,8 +36,7 @@ function show_form_real_estate_add () {?>
 		        while ($query->have_posts()) {
 			        $query->the_post();
 			        $post_id = get_the_ID();
-			        if ((int) get_post_meta ($_GET ['post'], '_city') [0] === $post_id) $selected = ' selected'; else $selected = '';
-			        echo '<option value="'.$post_id.'" '.$selected.'>'.get_the_title().'</option>';
+			        echo '<option value="'.$post_id.'">'.get_the_title().'</option>';
 		        }
 		        echo '</select>';
 
