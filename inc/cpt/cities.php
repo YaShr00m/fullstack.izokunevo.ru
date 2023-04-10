@@ -1,6 +1,6 @@
 <?php
 
-// Create CPT for real estate
+// Create CPT for cities
 add_action('init', 'create_cpt_city', 0);
 function create_cpt_city () {
 	register_post_type('city', array(
