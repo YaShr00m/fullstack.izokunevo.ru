@@ -12,7 +12,7 @@
         success:function(data) {
             // This outputs the result of the ajax request
             if (data == 'USER_EXISTS')          var msg =  ('Данный пользователь уже зарегистрирован, пожалуйста, <a href="/wp-login.php">войдите на сайт</a>');
-            if (data == 'BAD_EMAIL')            var msg =  ('Пожалуйста, укажите корректный адресэ электронной почты');
+            if (data == 'BAD_EMAIL')            var msg =  ('Пожалуйста, укажите корректный адрес электронной почты');
             if (data == 'CANNOT_CREATE_USER')   var msg =  ('Произошла ошибка при создании пользователя. Пожалуйста, обратитесь к администратору');
             if (data == 'LOGIN_SUCCESS')  {
                 $('#form_signup input').attr ('disabled', 'true');
